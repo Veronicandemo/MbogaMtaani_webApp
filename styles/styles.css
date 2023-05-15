@@ -1,0 +1,121 @@
+/* 
+colors ---
+ #d9480f - orange
+#fff4e6 - orange tint
+ 
+
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;800&display=swap');
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: content-box;
+ }
+ button:focus{
+     outline: none;
+     box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+ }
+ body{
+     font-family: 'Noto Sans', sans-serif;
+     font-size: 62.5%;
+     line-height: 1.2;
+ }
+ /* Header */
+ header{
+     padding: 20px 0 15px 0;
+     background: #fff4e6;
+     width: 100%;
+ }
+ .logo{
+    width: 10%;
+    height: 1%;
+    margin-top: -4.5%;
+ }
+ .nav-list{
+     display: flex;
+     font-size: 1.1rem;
+     gap: 4%;
+     list-style: none;
+     /* margin-left: 25%; */
+ }
+ .nav-list li button{
+     padding:15px 25px;
+     border: none;
+     font-size: inherit;
+     background:  #d9480f;
+     color: #ffffff;
+     font-weight: 800;
+     border-radius: 11px;
+ }
+ .nav-list li:last-child{
+     margin-left: 20%;
+ }
+
+ .nav-link:link,
+ .nav-link:visited{
+     padding:0;
+     margin:0;
+     text-decoration: none;
+     color: #d9480f; 
+ }
+ .nav-link:hover,
+.nav-link:active{
+    padding:0;
+    margin:0;
+    font-size: 1.1rem;
+    text-decoration:none;
+    font-variant:small-caps;
+    color: #ffa500;
+}
+/* Sticky navigation */
+.sticky .header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    padding-top: 20px;
+    padding-bottom: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.966);
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
+
+}
+.sticky .main-section{
+    margin-top: 8.6rem;
+}
+/* Goal container */
+.goal-container{
+    background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+    url(/imgs/mamamboga2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    /* z-index: -1; */
+    color: #ffffff;
+}
+.goal-container h1{
+    font-size: 3.4rem;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    white-space: nowrap;
+}
+.chev-down{
+    width: 60px;
+    height: 60px;
+    color: #d9480f;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align:  center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.chev-down:hover{
+    background-color: #d9480f;  
+    color: #fff;  
+} 
